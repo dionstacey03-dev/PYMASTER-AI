@@ -1,6 +1,6 @@
 # PYMASTER-AI
 
-A minimal Python starter with a command-line entry point and browser interface. AI features are not implemented yet.
+A Python learning platform with six beginner lessons, example code, quizzes, and browser-saved progress. AI tutoring and interactive code execution are not implemented yet.
 
 ## Development
 
@@ -24,6 +24,18 @@ From the repository root, run:
 .venv/bin/python -m pymaster_ai.web
 ```
 
-The UI listens on port 8000 and provides a name field and interactive greeting.
+The UI listens on port 8000 and provides lessons on printing, variables, conditions, loops, lists, and functions. Complete a quiz to mark each lesson done. Progress is stored locally in your browser.
 Use `--host 0.0.0.0 --port 8000` when your development platform needs to reach
 the server through a forwarded port. This is a development server.
+
+## Windows PowerShell
+
+With Python 3.12 or newer installed, run from the repository root:
+
+```powershell
+py -3 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e .
+.\.venv\Scripts\python.exe -m pymaster_ai.web
+```
+
+Open http://localhost:8000. To update an existing installation, stop the server with Ctrl+C, run `git pull origin main`, then restart it.
