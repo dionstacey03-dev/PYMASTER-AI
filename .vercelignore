@@ -1,0 +1,12 @@
+.git/
+.venv/
+.vercel/
+build/
+dist/
+site-public/
+**/__pycache__/
+**/*.egg-info/
+tests/
+.env
+.env.*
+!.env.example

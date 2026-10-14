@@ -16,4 +16,4 @@ pymaster-ai = "pymaster_ai.__main__:main"
 where = ["src"]
 
 [tool.setuptools.package-data]
-pymaster_ai = ["static/*.html"]
+pymaster_ai = ["static/*.html", "static/*.js"]
