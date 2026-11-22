@@ -44,6 +44,7 @@ jobs:
           node --check src/pymaster_ai/static/learning-ui.js
           node --check src/pymaster_ai/static/playground-frame.js
           node --check src/pymaster_ai/static/workspace.js
+          node --check src/pymaster_ai/static/languages.js
 
       - name: Verify deployment export
         run: python scripts/export_site.py
