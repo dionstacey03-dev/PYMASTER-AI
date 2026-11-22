@@ -10,7 +10,7 @@ import unittest
 
 class CurriculumTests(unittest.TestCase):
     def test_every_example_matches_its_output(self):
-        page = files('pymaster_ai').joinpath('static/index.html').read_text()
+        page = files('pymaster_ai').joinpath('static/app.js').read_text()
         source = page.split('const lessons=', 1)[1].split(';\nconst $=', 1)[0]
         lessons = json.loads(source)
         self.assertEqual(len(lessons), 30)
