@@ -30,6 +30,68 @@ html[data-theme=light]{color-scheme:light;--bg:#eaf0f8;--panel:#ffffffcc;--line:
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.theme-picker select{padding:9px;min-height:40px}.template-toolbar{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:18px 0}.template-toolbar label{color:var(--muted);font-size:13px}#program-input{display:block;width:100%;margin-top:10px;border:1px solid var(--line);background:#101726;color:#e3eaf8;border-radius:10px;padding:12px;font:14px/1.6 ui-monospace,monospace;resize:vertical}.loading-bar{height:4px;margin-top:20px;background:linear-gradient(90deg,transparent,var(--accent),transparent);background-size:200% 100%;animation:runtime-pulse 1.5s ease infinite;border-radius:8px}@keyframes runtime-pulse{to{background-position:200% 0}}.mobile-bottom{display:none}button,select{min-height:42px}html[data-theme=light] #program-input{background:#f4f7fd;color:#17283c}@media(max-width:700px){header{gap:8px;padding:0 12px}.brand{font-size:15px;gap:5px}.logo{padding:7px}.header-right{gap:6px}.header-right .avatar,#theme-toggle{display:none}.theme-picker select{max-width:96px}.mobile-bottom{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:10;gap:6px;margin:0;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#172239e8;backdrop-filter:blur(16px);border-top:1px solid var(--line)}.mobile-bottom button{flex:1;background:transparent;color:#e3edff;border:1px solid #b8cced33;border-radius:9px;padding:10px 4px;font-size:12px;min-height:44px}body{padding-bottom:calc(80px + env(safe-area-inset-bottom))}main{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}.actions .secondary{min-height:44px}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stat strong{font-size:19px}.stat span{overflow-wrap:anywhere}.brand{white-space:nowrap}.template-toolbar select{width:100%}}@media(prefers-reduced-motion:reduce){.loading-bar{animation:none}}
 .progress-ring{position:relative;width:68px;height:68px;margin:10px 0;border-radius:50%;background:conic-gradient(#b7ed98 var(--progress-angle,0deg),#7690ae44 0);display:grid;place-items:center}.progress-ring:before{content:"";position:absolute;inset:5px;border-radius:50%;background:#1c2b40}.progress-ring strong{position:relative;margin:0;font-size:19px}html[data-theme=light] .progress-ring:before{background:#e6f0ee}#title:focus{outline:none}@media(max-width:700px){.progress-ring{width:54px;height:54px}.progress-ring strong{font-size:16px}}
 .learning-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:20px 0}.learning-form label{display:flex;flex-direction:column;gap:8px;color:var(--muted);font-size:13px}.learning-form input{width:100%;min-height:44px;border:1px solid var(--line);border-radius:9px;background:#182539;color:#eff4ff;padding:12px;font:inherit}.learning-form select{width:100%}.learning-form .actions{grid-column:1/-1}.comparison-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0}.comparison-example{min-width:0;border:1px solid var(--line);border-radius:12px;padding:18px;background:#152039}.comparison-example pre{padding:14px 0;white-space:pre-wrap;overflow-wrap:anywhere}.memory-preview,.hint-step pre{white-space:pre-wrap;overflow-wrap:anywhere}.roadmap-weeks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.roadmap-week{min-width:0;padding:18px;border:1px solid var(--line);border-radius:12px}.roadmap-week button{max-width:100%;text-align:left}.hint-panel{margin-top:22px;border-top:1px solid var(--line);padding-top:18px}.hint-step{border-bottom:1px solid var(--line)}.hint-step pre{padding:0 0 16px;font-family:system-ui;line-height:1.7}#learning-panel .card{margin-top:24px}#companion-fields:disabled{opacity:.5}html[data-theme=light] .learning-form input{background:#f4f7fd;color:#17283c}html[data-theme=light] .comparison-example{background:#e7eff6}html[data-theme=light] .comparison-example pre,html[data-theme=light] .memory-preview{color:#26364b}@media(max-width:700px){.learning-form,.comparison-grid,.roadmap-weeks{grid-template-columns:1fr}.mobile-bottom button{font-size:11px}.learning-form .actions{grid-column:auto}}
+
+/* PYMASTER-AI visual refresh — layered midnight UI, crisp typography and responsive learning surfaces. */
+
+:root{--bg:#080d19;--panel:rgba(17,27,48,.78);--line:rgba(157,183,226,.16);--muted:#9eacc7;--accent:#a8f0d0;--violet:#a99bff;--cyan:#79dcf2;--ink:#eef4ff;--shadow:0 22px 70px rgba(0,0,0,.28)}
+*{scrollbar-color:rgba(157,183,226,.35) transparent;scrollbar-width:thin}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--ink);background:radial-gradient(ellipse at 12% 0%,rgba(91,76,190,.28),transparent 38%),radial-gradient(ellipse at 92% 18%,rgba(38,166,174,.19),transparent 34%),radial-gradient(ellipse at 52% 100%,rgba(52,84,154,.22),transparent 42%),#080d19;letter-spacing:.005em}
+h1,h2,.brand,.course strong{font-family:'Space Grotesk','DM Sans',sans-serif}
+header{height:76px;padding:0 clamp(18px,4vw,54px);position:sticky;top:0;z-index:20;background:rgba(8,14,28,.76);border-bottom:1px solid rgba(182,204,245,.14);backdrop-filter:blur(24px) saturate(145%);-webkit-backdrop-filter:blur(24px) saturate(145%)}
+.brand{font-size:19px;letter-spacing:-.7px}.logo{border-radius:13px;padding:10px 12px;background:linear-gradient(135deg,#c8ffe4,#8bd9e9);color:#102a31;box-shadow:0 5px 24px rgba(121,220,242,.2)}
+.tag{font-size:12px;letter-spacing:.02em;color:#aab8d1}.header-right{gap:12px}.avatar{border:1px solid rgba(196,217,255,.22);background:linear-gradient(145deg,rgba(169,155,255,.28),rgba(121,220,242,.16));color:#eff4ff}
+.layout{grid-template-columns:286px minmax(0,1fr);min-height:calc(100vh - 76px)}
+aside{padding:28px 20px;background:rgba(9,17,33,.64);border-right:1px solid rgba(157,183,226,.14);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+aside .eyebrow{color:#91a6c8}aside h2{font-size:17px;letter-spacing:-.4px;margin:14px 0 10px}
+main{max-width:1500px;padding:clamp(24px,4vw,58px)}
+.eyebrow{color:#a6b7d4;font-size:10px;letter-spacing:2.1px}
+h1{font-size:clamp(32px,4vw,52px);line-height:1.08;letter-spacing:-2px;font-weight:700}
+h2{font-size:21px;letter-spacing:-.7px}
+p{color:#aab8d1;line-height:1.75}
+nav{max-height:68vh;margin:18px 0}
+.lesson{border:1px solid transparent;border-radius:12px;padding:11px 12px;margin:4px 0;color:#9eacc7;transition:background .2s,border-color .2s,color .2s,transform .2s}
+.lesson:hover{background:rgba(151,178,224,.08);transform:translateX(2px)}
+.lesson[aria-current=true]{background:linear-gradient(105deg,rgba(168,240,208,.14),rgba(169,155,255,.09));border-color:rgba(168,240,208,.25);color:#e7fff4}
+.number{border-radius:9px;background:rgba(143,165,205,.1);border:1px solid rgba(178,200,238,.1)}
+.lesson[aria-current=true] .number{background:linear-gradient(135deg,#c8ffe4,#86dce9);color:#102a31}
+progress{height:7px;border-radius:20px;overflow:hidden}progress::-webkit-progress-bar{background:rgba(153,177,218,.13)}progress::-webkit-progress-value{background:linear-gradient(90deg,#a8f0d0,#79dcf2,#a99bff)}
+.hero{border-radius:26px;padding:clamp(26px,4vw,48px);min-height:260px;align-items:center;background:radial-gradient(circle at 78% 20%,rgba(121,220,242,.18),transparent 28%),linear-gradient(125deg,rgba(31,51,78,.94),rgba(29,30,64,.86) 58%,rgba(37,44,78,.9));border:1px solid rgba(180,211,246,.22);box-shadow:var(--shadow);position:relative}
+.hero:after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:linear-gradient(120deg,rgba(255,255,255,.09),transparent 35%,rgba(169,155,255,.05));}
+.hero h1{max-width:600px}.hero p{max-width:500px;color:#b7c5df}.hero-art{font-size:clamp(50px,8vw,112px);color:#b8f4dd;text-shadow:0 0 60px rgba(121,220,242,.35);transform:rotate(-8deg);opacity:.95}
+.pill{border:1px solid rgba(168,240,208,.32);background:rgba(168,240,208,.09);color:#caffea;padding:7px 12px;border-radius:30px;font-weight:700;letter-spacing:.04em}
+.stats{gap:14px;margin:22px 0 30px}.stat,.course,.card{border:1px solid var(--line);border-radius:19px;background:linear-gradient(145deg,rgba(27,42,68,.84),rgba(14,24,43,.76));box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 12px 34px rgba(0,0,0,.12)}
+.stat{padding:20px 22px;position:relative;overflow:hidden}.stat:after{content:"";position:absolute;width:90px;height:90px;border-radius:50%;right:-38px;top:-40px;background:rgba(121,220,242,.08);filter:blur(2px)}
+.stat strong{font-family:'Space Grotesk',sans-serif;font-size:30px;letter-spacing:-1.2px;color:#eff8ff}.stat span{color:#9eacc7;font-size:12px}
+.section-head{margin-top:38px;margin-bottom:16px}.section-head h2{margin:0}
+.course-grid{gap:16px}.course{padding:22px;min-height:190px;gap:13px;text-decoration:none;transition:transform .22s,border-color .22s,box-shadow .22s,background .22s;position:relative;overflow:hidden}
+.course:before{content:"";position:absolute;inset:0;opacity:0;background:radial-gradient(circle at 100% 0%,rgba(121,220,242,.13),transparent 48%);transition:opacity .22s}
+.course:hover{transform:translateY(-5px);border-color:rgba(168,240,208,.42);box-shadow:0 20px 45px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.1)}
+.course:hover:before{opacity:1}.course>*{position:relative}.course-icon{width:46px;height:46px;border-radius:14px;background:linear-gradient(145deg,rgba(168,240,208,.17),rgba(169,155,255,.15));border:1px solid rgba(184,218,245,.15);color:#caffea;font-size:21px}
+.course strong{font-size:17px;letter-spacing:-.3px}.course small{color:#9eacc7;line-height:1.65}.course .status{color:#b9f5d9;font-weight:700}
+.sidebar-link{border:1px solid rgba(168,240,208,.16);border-radius:12px;background:linear-gradient(100deg,rgba(168,240,208,.1),rgba(169,155,255,.08));color:#caffea;font-weight:700;transition:filter .2s,transform .2s}.sidebar-link:hover{filter:brightness(1.2);transform:translateY(-1px)}
+.primary{border-radius:12px;padding:13px 20px;background:linear-gradient(115deg,#c8ffe4,#88ddec);color:#0b2830;font-weight:800;box-shadow:0 8px 25px rgba(121,220,242,.16);transition:transform .18s,filter .18s}
+.primary:hover{filter:brightness(1.06);transform:translateY(-1px);background:linear-gradient(115deg,#d9ffec,#9ce9f4)}
+.secondary{border-radius:12px;border-color:rgba(171,197,239,.2);background:rgba(180,204,245,.055);color:#d4e0f5;transition:background .18s,border-color .18s}.secondary:hover{background:rgba(180,204,245,.11);border-color:rgba(171,197,239,.35)}
+.card{padding:clamp(18px,2.4vw,28px)}.card h2{margin-bottom:12px}
+.breadcrumb{color:#93a7c8;margin-bottom:24px}.breadcrumb button{color:#b9f5d9}
+.workspace{gap:18px;margin-top:24px}.editor{border:1px solid rgba(159,185,227,.2);border-radius:15px;background:rgba(6,13,27,.9);box-shadow:inset 0 1px 0 rgba(255,255,255,.05)}
+.editor-bar{background:rgba(158,184,229,.08);border-bottom:1px solid rgba(159,185,227,.12);padding:13px 16px}.terminal{border-top:1px solid rgba(159,185,227,.12);background:rgba(7,15,29,.5)}
+.concept{border-radius:12px;background:linear-gradient(110deg,rgba(168,240,208,.1),rgba(121,220,242,.045));border-left:3px solid #a8f0d0;color:#d3e7dd;padding:15px 17px}
+.option{border-radius:12px;padding:14px 16px;background:rgba(169,188,224,.035);border-color:rgba(169,188,224,.17);transition:background .18s,border-color .18s}
+.option:hover{background:rgba(169,188,224,.08)}.option:has(input:checked){background:linear-gradient(110deg,rgba(168,240,208,.14),rgba(169,155,255,.09));border-color:rgba(168,240,208,.45)}
+.filters{gap:10px}.filters input[type=search],select{border-radius:12px;background:rgba(13,24,43,.85);border-color:rgba(159,185,227,.19);color:#edf4ff;padding:12px 14px}
+#program-input{border-radius:12px;border-color:rgba(159,185,227,.2);background:#071020;color:#e8f0ff}
+#console-output{border-radius:12px;background:#071020;border-color:rgba(159,185,227,.18);padding:16px}
+.completion{background:linear-gradient(120deg,rgba(168,240,208,.13),rgba(121,220,242,.06),rgba(169,155,255,.1));border:1px solid rgba(168,240,208,.28)}
+footer{color:#7f91b1;border-top:1px solid rgba(157,183,226,.1);margin-top:34px}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #8de8d0;outline-offset:3px}
+@media(min-width:1400px){.course-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1050px){.layout{grid-template-columns:250px minmax(0,1fr)}main{padding:28px}.hero-art{font-size:58px}}
+@media(max-width:700px){header{height:66px;padding:0 14px}.layout{grid-template-columns:1fr}aside{padding:14px 14px 12px;border-right:0;border-bottom:1px solid var(--line)}nav{margin:10px 0 0;gap:8px}.lesson{min-width:174px;padding:10px}.sidebar-link{margin:0 0 10px}main{padding:22px 15px}.hero{padding:23px 20px;min-height:0;border-radius:20px}.hero h1{font-size:33px}.hero-art{display:none}.stats{gap:8px;margin:16px 0 24px}.stat{padding:13px 11px;border-radius:14px}.stat strong{font-size:22px}.stat span{font-size:10px}.course-grid{grid-template-columns:1fr;gap:11px}.course{min-height:0;padding:18px;display:grid;grid-template-columns:46px minmax(0,1fr);align-items:center;column-gap:13px}.course-icon{grid-row:span 2}.course strong,.course small,.course .status{grid-column:2}.course .status{margin-top:0}.card{padding:17px;border-radius:16px}.section-head{margin-top:28px}.workspace{gap:14px}.mobile-bottom{background:rgba(8,15,29,.9);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border-top:1px solid rgba(157,183,226,.18)}.mobile-bottom button{border-radius:12px;background:rgba(169,188,224,.06);border-color:rgba(169,188,224,.12);color:#eaf2ff}.mobile-bottom button:active{background:rgba(168,240,208,.16)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.lesson,.course,.primary,.secondary{transition:none}.course:hover,.primary:hover,.sidebar-link:hover{transform:none}}
+@media(prefers-reduced-transparency:reduce){header,aside,.hero,.stat,.course,.card,.editor,.mobile-bottom{background:#111d34;backdrop-filter:none;-webkit-backdrop-filter:none}}
+
 </style></head><body>
 <header><div class="brand"><span class="logo">&lt;/&gt;</span>PYMASTER<span style="color:#b6f276">.AI</span></div><div class="header-right"><label class="theme-picker"><span class="sr-only">Color theme</span><select id="theme-select" aria-label="Color theme"><option value="dark">Dark</option><option value="light">Light</option><option value="system">System</option></select></label><button class="secondary" id="theme-toggle" aria-pressed="false">Light theme</button><span class="tag">Your next skill starts here</span><span class="avatar" aria-label="Learner profile">P</span></div></header>
 <div class="layout"><aside><button id="dashboard-link" class="sidebar-link">▦ &nbsp; Learning dashboard</button><button id="learning-tools" class="sidebar-link">◇ &nbsp; Learning tools</button><div class="eyebrow">YOUR COURSE</div><h2>Python mastery path</h2><p id="progress-text"></p><progress id="progress" max="30" value="0" aria-label="Completed lessons"></progress><p id="learning-load-error" class="notice" role="status"></p><nav id="lessons" aria-label="Lessons"></nav><button class="secondary" id="reset">Reset progress</button><p class="notice" id="storage-note">Your progress stays with you in this browser.</p></aside>
@@ -45,541 +107,4 @@ html[data-theme=light]{color-scheme:light;--bg:#eaf0f8;--panel:#ffffffcc;--line:
 </section>
 <section id="dashboard"><div class="hero"><div><span class="pill">YOUR PYTHON JOURNEY</span><h1>Build a little.<br>Learn a lot.</h1><p>From your first line to your first function. Build your Python mastery path, one small win at a time.</p><button class="primary" id="continue">Start learning →</button></div><div class="hero-art" aria-hidden="true">{ py }</div></div><div class="stats"><div class="stat"><span>LESSONS COMPLETED</span><strong id="stat-complete">0 / 30</strong><span>Every step counts</span></div><div class="stat"><span>COURSE PROGRESS</span><div class="progress-ring" id="course-progress-ring" role="img" aria-label="Course progress 0 percent"><strong id="stat-percent">0%</strong></div><span>Python mastery path</span></div><div class="stat"><span>LEARNING LEVEL</span><strong>Beginner</strong><span>No experience needed</span></div></div><div class="section-head"><h2>Your learning path</h2><span class="tag">30 lessons · 6 modules</span></div><p>Explore a topic or pick up where you left off.</p><div class="filters"><label for="search">Find a lesson</label><input id="search" type="search" placeholder="Search topics…"><label for="module-filter">Module</label><select id="module-filter"><option value="">All modules</option></select><button class="secondary" id="export-progress">Export progress</button><button class="secondary" id="import-button">Import progress</button><input type="file" id="import-progress" accept="application/json" hidden></div><p id="import-status" role="status"></p><section class="completion card" id="completion" hidden><div class="eyebrow">COURSE COMPLETED</div><h2>You made it to the finish line.</h2><p>All 30 lesson quizzes completed. Put your skills to work with the task-tracker project, then explore your next Python project.</p><button class="primary" id="download-summary">Download completion summary</button><p class="notice">A personal learning record, not an accredited certificate or project assessment.</p></section><div class="course-grid" id="course-grid"></div></section>
 <section id="lesson-view" hidden><div class="breadcrumb"><button id="back-dashboard">Dashboard</button> &nbsp; / &nbsp; Python mastery path</div><div class="lesson-top"><div><div class="eyebrow" id="step"></div><h1 id="title"></h1></div><span class="pill" id="module-label">FOUNDATIONS</span></div><p id="intro"></p><div class="workspace"><section class="card"><h2>Understand the concept</h2><p id="explanation"></p><div class="editor"><div class="editor-bar"><span><span class="dots">● ● ●</span> &nbsp; lesson.py</span><button class="copy" id="copy">Copy code</button></div><pre><code id="code"></code></pre><div class="terminal">TERMINAL · EXPECTED OUTPUT</div><pre class="output" id="output"></pre></div><div class="concept"><strong>YOUR PRACTICE CHALLENGE</strong><p id="practice"></p><button class="secondary" id="download-code">Download example.py</button></div></section><section class="card"><div class="quiz-tag">PUT IT INTO PRACTICE</div><h2>Quick knowledge check</h2><form id="quiz"><fieldset><legend id="question"></legend><div id="options"></div></fieldset><button class="primary" type="submit">Check answer →</button><div id="feedback" role="status" aria-live="polite"></div></form><div class="hint-panel"><button type="button" class="secondary" id="show-hints">Get a progressive hint</button><p id="hint-status" class="notice" role="status"></p><div id="hint-content"></div></div><div class="actions"><button class="secondary" id="previous">← Previous lesson</button><button class="secondary" id="next">Next lesson →</button></div></section></div><section class="card" id="playground"><div class="quiz-tag">PYTHON PLAYGROUND</div><h2>Try it yourself</h2><p>Edit this lesson’s example and run real Python in your browser.</p><p class="notice">Internet is required to load Python. Runs stop after 5 seconds and output is limited to 20,000 characters. Browser memory limits apply; a strict per-run memory quota is not available. Files stay in temporary runtime memory. Supply input() values below before running; live prompt interaction is not supported. Operating-system processes and some native packages are unsupported.</p><div class="template-toolbar"><label for="starter-template">Starter template</label><select id="starter-template"><option value="">Choose a template…</option><option value="example">Current lesson example</option><option value="blank">Blank script</option><option value="input">Input and greeting</option><option value="loop">For loop</option><option value="function">Function</option></select></div><div class="code-input"><pre id="line-numbers" aria-hidden="true"></pre><div class="code-layers"><pre id="highlight" aria-hidden="true"></pre><textarea id="python-editor" aria-label="Python code editor" spellcheck="false" autocapitalize="off" autocomplete="off" maxlength="20000"></textarea></div></div><p class="notice">Tab indents; Shift+Tab leaves the editor. Ctrl/⌘+Enter runs, Ctrl/⌘+S downloads, Escape stops.</p><label for="program-input">Program input · one response per line</label><textarea id="program-input" rows="3" maxlength="20000" placeholder="Example: Ada" aria-describedby="input-help"></textarea><p class="notice" id="input-help">Values are used in order by input(). When they run out, Python raises EOFError. Inputs are not saved.</p><div class="actions playground-actions"><button class="primary" id="run-code">Run Code</button><button class="secondary" id="stop-code" disabled>Stop</button><button class="secondary" id="reset-code">Reset Code</button><button class="secondary" id="copy-draft">Copy Code</button><button class="secondary" id="save-code">Save Code</button><button class="secondary" id="clear-output">Clear Output</button></div><p id="save-status" role="status" class="notice"></p><div id="runtime-loading" class="loading-bar" role="progressbar" aria-label="Python runtime busy" hidden></div><p id="execution-time" class="notice"></p><p id="execution-status" role="status" aria-live="polite">Ready</p><pre id="console-output" aria-label="Python console output" tabindex="0"></pre><iframe id="runtime-frame" title="Isolated Python runtime" sandbox="allow-scripts" src="/playground.html" hidden></iframe></section></section><footer>Learn at your pace. Progress is saved on this device. Examples and playground are separate. AI tutoring is not configured.</footer></main></div><nav class="mobile-bottom" aria-label="Mobile navigation"><button id="mobile-dashboard">Dashboard</button><button id="mobile-continue">Continue</button><button id="mobile-playground">Playground</button><button id="mobile-learning">Tools</button></nav>
-<script>
-const lessons=[
-  {
-    "title": "Your first Python program",
-    "intro": "Start with one line of code and make Python say hello.",
-    "explanation": "The print() function displays a value. Put text inside matching quotes to create a string.",
-    "code": "print(\"Hello, Python!\")",
-    "output": "Hello, Python!",
-    "question": "Which line displays Hello, Python!?",
-    "options": [
-      "print(\"Hello, Python!\")",
-      "echo(\"Hello, Python!\")",
-      "print(Hello, Python!)"
-    ],
-    "answer": 0,
-    "reason": "print() displays the string, and quotes tell Python that the value is text.",
-    "module": "01 · Foundations",
-    "practice": "Change a value in the example and predict the new output. Run it locally with Python, then compare your prediction."
-  },
-  {
-    "title": "Variables and types",
-    "intro": "Give values a name so you can use them again.",
-    "explanation": "Use = to assign a value. Strings hold text, integers hold whole numbers, and booleans hold True or False.",
-    "code": "name = \"Ada\"\nage = 28\nis_learning = True\nprint(name)\nprint(age + 1)",
-    "output": "Ada\n29",
-    "question": "What is the value of score after score = 10 followed by score = score + 5?",
-    "options": [
-      "10",
-      "15",
-      "\"105\""
-    ],
-    "answer": 1,
-    "reason": "Both values are integers, so + adds them. The updated value is 15.",
-    "module": "01 · Foundations",
-    "practice": "Change a value in the example and predict the new output. Run it locally with Python, then compare your prediction."
-  },
-  {
-    "title": "Making decisions",
-    "intro": "Choose what happens next with if and else.",
-    "explanation": "An if statement runs its indented block when the condition is true. Otherwise, the else block runs. Python uses indentation to group statements.",
-    "code": "score = 80\nif score >= 70:\n    print(\"Passed\")\nelse:\n    print(\"Keep practicing\")",
-    "output": "Passed",
-    "question": "What does this example print if score is changed to 60?",
-    "options": [
-      "Passed",
-      "Keep practicing",
-      "60"
-    ],
-    "answer": 1,
-    "reason": "60 >= 70 is false, so Python runs the else block.",
-    "module": "01 · Foundations",
-    "practice": "Change a value in the example and predict the new output. Run it locally with Python, then compare your prediction."
-  },
-  {
-    "title": "Loops and repetition",
-    "intro": "Repeat a task without writing the same line again.",
-    "explanation": "A for loop visits each value in a sequence. range(3) produces 0, 1, and 2; the stop value is excluded.",
-    "code": "for number in range(3):\n    print(number)",
-    "output": "0\n1\n2",
-    "question": "How many times does the loop body run for range(4)?",
-    "options": [
-      "3",
-      "4",
-      "5"
-    ],
-    "answer": 1,
-    "reason": "range(4) contains four values: 0, 1, 2, and 3.",
-    "module": "01 · Foundations",
-    "practice": "Change a value in the example and predict the new output. Run it locally with Python, then compare your prediction."
-  },
-  {
-    "title": "Lists and collections",
-    "intro": "Keep related values together in a list.",
-    "explanation": "Lists use square brackets. Positions start at zero, so fruits[0] gets the first item. append() adds an item to the end.",
-    "code": "fruits = [\"apple\", \"banana\"]\nfruits.append(\"orange\")\nprint(fruits[0])\nprint(len(fruits))",
-    "output": "apple\n3",
-    "question": "Which expression selects banana from this list?",
-    "options": [
-      "fruits[0]",
-      "fruits[1]",
-      "fruits[2]"
-    ],
-    "answer": 1,
-    "reason": "Index 0 is apple, index 1 is banana, and index 2 is orange.",
-    "module": "01 · Foundations",
-    "practice": "Change a value in the example and predict the new output. Run it locally with Python, then compare your prediction."
-  },
-  {
-    "title": "Reusable functions",
-    "intro": "Organize a task into a function you can call again.",
-    "explanation": "def defines a function. Parameters receive inputs, and return sends a result back to the caller.",
-    "code": "def square(number):\n    return number * number\n\nprint(square(5))",
-    "output": "25",
-    "question": "What does square(3) return?",
-    "options": [
-      "6",
-      "9",
-      "3"
-    ],
-    "answer": 1,
-    "reason": "The function multiplies 3 by itself, returning 9.",
-    "module": "01 · Foundations",
-    "practice": "Change a value in the example and predict the new output. Run it locally with Python, then compare your prediction."
-  },
-  {
-    "module": "02 · Working with data",
-    "title": "Strings and formatting",
-    "intro": "Format a welcome message containing your name and a lesson number.",
-    "explanation": "Strings are immutable text sequences. strip() removes surrounding whitespace, title() capitalizes words, and an f-string inserts expressions inside braces. Methods return new strings rather than changing the original.",
-    "code": "name = \"  ada lovelace  \"\nclean = name.strip().title()\nprint(f\"Welcome, {clean}!\")",
-    "output": "Welcome, Ada Lovelace!",
-    "question": "Which method removes surrounding whitespace?",
-    "options": [
-      "strip()",
-      "split()",
-      "append()"
-    ],
-    "answer": 0,
-    "reason": "strip() removes leading and trailing whitespace; split() separates text into a list.",
-    "practice": "Format a welcome message containing your name and a lesson number."
-  },
-  {
-    "module": "02 · Working with data",
-    "title": "Numbers and conversion",
-    "intro": "Calculate the total price for five items and display two decimal places.",
-    "explanation": "input() returns text, even when the user types a number. Convert numeric text with int() or float() before arithmetic. / divides, // floors a quotient, and % gives the remainder. Invalid numeric text raises ValueError.",
-    "code": "price = float(\"12.50\")\nquantity = int(\"3\")\nprint(f\"Total: {price * quantity:.2f}\")\nprint(10 % 3)",
-    "output": "Total: 37.50\n1",
-    "question": "What is int(\"4\") + 2?",
-    "options": [
-      "\"42\"",
-      "6",
-      "An error"
-    ],
-    "answer": 1,
-    "reason": "int converts the string to the integer 4, which can be added to 2.",
-    "practice": "Calculate the total price for five items and display two decimal places."
-  },
-  {
-    "module": "02 · Working with data",
-    "title": "Dictionaries",
-    "intro": "Create a dictionary for a book with a title, author, and reading status.",
-    "explanation": "Dictionaries map unique keys to values. Square brackets retrieve an existing key and raise KeyError if missing. get() can provide a default. Updating an existing key replaces its value.",
-    "code": "learner = {\"name\": \"Ada\", \"points\": 10}\nlearner[\"points\"] += 5\nprint(learner[\"points\"])\nprint(learner.get(\"level\", \"beginner\"))",
-    "output": "15\nbeginner",
-    "question": "Which lookup safely defaults when a key is missing?",
-    "options": [
-      "learner[\"level\"]",
-      "learner.get(\"level\", \"beginner\")",
-      "learner.append(\"level\")"
-    ],
-    "answer": 1,
-    "reason": "get() returns the provided default when the key is absent.",
-    "practice": "Create a dictionary for a book with a title, author, and reading status."
-  },
-  {
-    "module": "02 · Working with data",
-    "title": "Tuples and sets",
-    "intro": "Remove duplicate tags from a list and print them in alphabetical order.",
-    "explanation": "Tuples hold an ordered sequence that cannot be reassigned item by item. Sets hold distinct hashable values and support union and intersection. Set iteration order is not guaranteed; sort a set when you need deterministic display.",
-    "code": "point = (3, 4)\nx, y = point\nskills = {\"Python\", \"Python\", \"Git\"}\nprint(x + y)\nprint(sorted(skills))",
-    "output": "7\n['Git', 'Python']",
-    "question": "Which collection removes duplicate values?",
-    "options": [
-      "list",
-      "tuple",
-      "set"
-    ],
-    "answer": 2,
-    "reason": "A set stores each distinct value once.",
-    "practice": "Remove duplicate tags from a list and print them in alphabetical order."
-  },
-  {
-    "module": "02 · Working with data",
-    "title": "Slicing and comprehensions",
-    "intro": "Build a list of squares for odd numbers from 1 through 9.",
-    "explanation": "A slice sequence[start:stop:step] excludes the stop index. A list comprehension transforms a sequence, optionally filtering values. Keep comprehensions short; use ordinary loops when multiple operations would make them hard to read.",
-    "code": "numbers = [1, 2, 3, 4, 5]\nprint(numbers[1:4])\nprint([n * n for n in numbers if n % 2 == 0])",
-    "output": "[2, 3, 4]\n[4, 16]",
-    "question": "What is [n * 2 for n in [1, 2, 3]]?",
-    "options": [
-      "[1, 2, 3]",
-      "[2, 4, 6]",
-      "[1, 4, 9]"
-    ],
-    "answer": 1,
-    "reason": "Each input is multiplied by 2, producing a new list.",
-    "practice": "Build a list of squares for odd numbers from 1 through 9."
-  },
-  {
-    "module": "02 · Working with data",
-    "title": "While loops and loop control",
-    "intro": "Write a countdown from five and skip printing three with continue.",
-    "explanation": "while repeats as long as its condition is true. Update the condition to avoid accidental infinite loops. break exits the nearest loop; continue skips to its next iteration.",
-    "code": "count = 3\nwhile count > 0:\n    print(count)\n    count -= 1\nprint(\"Go!\")",
-    "output": "3\n2\n1\nGo!",
-    "question": "What does break do?",
-    "options": [
-      "Restarts a loop",
-      "Exits the nearest loop",
-      "Exits Python always"
-    ],
-    "answer": 1,
-    "reason": "break ends the nearest enclosing loop, then execution continues after it.",
-    "practice": "Write a countdown from five and skip printing three with continue."
-  },
-  {
-    "module": "03 · Reliable programs",
-    "title": "Function arguments and scope",
-    "intro": "Write a function that calculates a price with an optional discount.",
-    "explanation": "Default arguments make parameters optional. Keyword arguments identify a parameter by name. Local variables belong to a function call. Avoid mutable default arguments: use None and create a fresh list inside the function.",
-    "code": "def greet(name, greeting=\"Hello\"):\n    return f\"{greeting}, {name}!\"\n\nprint(greet(\"Ada\"))\nprint(greet(\"Ada\", greeting=\"Hi\"))",
-    "output": "Hello, Ada!\nHi, Ada!",
-    "question": "Which is a safe default for a function that creates a new list per call?",
-    "options": [
-      "items=[]",
-      "items=None",
-      "items={}"
-    ],
-    "answer": 1,
-    "reason": "None avoids sharing one mutable default object across calls.",
-    "practice": "Write a function that calculates a price with an optional discount."
-  },
-  {
-    "module": "03 · Reliable programs",
-    "title": "Modules and the standard library",
-    "intro": "Move a reusable function into a helper module and import it in another file.",
-    "explanation": "A module is a Python file containing reusable definitions. import exposes a module by name. The standard library includes tools for mathematics, dates, paths, and data formats. A main guard runs code only when a file is executed directly.",
-    "code": "import math\n\ndef diagonal(a, b):\n    return math.hypot(a, b)\n\nif __name__ == \"__main__\":\n    print(diagonal(3, 4))",
-    "output": "5.0",
-    "question": "When does an if __name__ == \"__main__\" block execute?",
-    "options": [
-      "Whenever imported",
-      "When run as the main program",
-      "Never"
-    ],
-    "answer": 1,
-    "reason": "The main guard separates executable entry-point behavior from importable definitions.",
-    "practice": "Move a reusable function into a helper module and import it in another file."
-  },
-  {
-    "module": "03 · Reliable programs",
-    "title": "Exceptions and validation",
-    "intro": "Write a conversion function that reports invalid numeric input clearly.",
-    "explanation": "Catch specific exceptions for failures you expect. Use else for code that should run when no exception occurs and finally for cleanup that must always run. Validate user input before relying on it; do not hide unexpected errors with a broad empty except.",
-    "code": "try:\n    age = int(\"not a number\")\nexcept ValueError:\n    print(\"Please enter a whole number.\")",
-    "output": "Please enter a whole number.",
-    "question": "Which exception does int(\"abc\") raise?",
-    "options": [
-      "KeyError",
-      "ValueError",
-      "ZeroDivisionError"
-    ],
-    "answer": 1,
-    "reason": "The value cannot be interpreted as an integer, so conversion raises ValueError.",
-    "practice": "Write a conversion function that reports invalid numeric input clearly."
-  },
-  {
-    "module": "03 · Reliable programs",
-    "title": "Files and context managers",
-    "intro": "Save three study notes to a UTF-8 file, then read them back.",
-    "explanation": "Use with to ensure files close even when an exception occurs. Specify UTF-8 for text. Mode w overwrites, a appends, and r reads. pathlib provides portable path operations. This example uses a temporary folder and leaves no persistent file.",
-    "code": "from pathlib import Path\nfrom tempfile import TemporaryDirectory\n\nwith TemporaryDirectory() as folder:\n    path = Path(folder) / \"notes.txt\"\n    path.write_text(\"Learn Python\", encoding=\"utf-8\")\n    with path.open(encoding=\"utf-8\") as file:\n        print(file.read())",
-    "output": "Learn Python",
-    "question": "Which file mode appends without replacing existing text?",
-    "options": [
-      "w",
-      "a",
-      "r"
-    ],
-    "answer": 1,
-    "reason": "Mode a appends; w truncates an existing file.",
-    "practice": "Save three study notes to a UTF-8 file, then read them back."
-  },
-  {
-    "module": "03 · Reliable programs",
-    "title": "JSON and structured data",
-    "intro": "Serialize a study plan to JSON and restore its lesson list.",
-    "explanation": "JSON represents objects, arrays, strings, numbers, booleans, and null. json.dumps converts supported Python data to JSON text, and json.loads parses JSON text. JSON is a data format, not executable Python.",
-    "code": "import json\n\ntext = json.dumps({\"completed\": 3, \"active\": True})\nrestored = json.loads(text)\nprint(restored[\"completed\"])\nprint(restored[\"active\"])",
-    "output": "3\nTrue",
-    "question": "What does json.loads do?",
-    "options": [
-      "Writes a file automatically",
-      "Parses JSON text into Python data",
-      "Runs Python code"
-    ],
-    "answer": 1,
-    "reason": "loads parses a string; it does not execute code or write a file.",
-    "practice": "Serialize a study plan to JSON and restore its lesson list."
-  },
-  {
-    "module": "03 · Reliable programs",
-    "title": "Virtual environments and dependencies",
-    "intro": "Create a virtual environment locally and use its Python to inspect installed packages.",
-    "explanation": "A virtual environment isolates project packages. Use python -m pip with the intended interpreter. Declare dependencies in pyproject.toml and use a lockfile when a project requires reproducible resolution. The example inspects the current interpreter rather than installing packages.",
-    "code": "import sys\n\nprint(sys.version_info.major)\nprint(sys.version_info.minor >= 12)",
-    "output": "3\nTrue",
-    "question": "Why use a virtual environment?",
-    "options": [
-      "To isolate project dependencies",
-      "To make all code faster",
-      "To replace source control"
-    ],
-    "answer": 0,
-    "reason": "Each environment has its own package installation context.",
-    "practice": "Create a virtual environment locally and use its Python to inspect installed packages."
-  },
-  {
-    "module": "04 · Software design",
-    "title": "Classes and objects",
-    "intro": "Build a Book class with a title and a method that marks it as read.",
-    "explanation": "Classes group related state and behavior. __init__ initializes each new instance. self refers to the current instance. Instance attributes belong to that object; keep class attributes for intentionally shared data.",
-    "code": "class Learner:\n    def __init__(self, name):\n        self.name = name\n\n    def greet(self):\n        return f\"Hi, {self.name}\"\n\nprint(Learner(\"Ada\").greet())",
-    "output": "Hi, Ada",
-    "question": "What does self refer to in an instance method?",
-    "options": [
-      "The current instance",
-      "The parent module",
-      "Every instance together"
-    ],
-    "answer": 0,
-    "reason": "self is the specific object receiving the method call.",
-    "practice": "Build a Book class with a title and a method that marks it as read."
-  },
-  {
-    "module": "04 · Software design",
-    "title": "Inheritance and composition",
-    "intro": "Create a specialized course, then consider how a separate lesson list could be composed into it.",
-    "explanation": "Inheritance specializes an existing class. Overriding replaces inherited behavior, and super() accesses parent behavior. Composition puts collaborating objects inside another object; prefer it when there is no clear is-a relationship.",
-    "code": "class Course:\n    def label(self):\n        return \"Course\"\n\nclass PythonCourse(Course):\n    def label(self):\n        return super().label() + \": Python\"\n\nprint(PythonCourse().label())",
-    "output": "Course: Python",
-    "question": "What does super() help access?",
-    "options": [
-      "Parent-class behavior",
-      "Only global variables",
-      "A new process"
-    ],
-    "answer": 0,
-    "reason": "super() delegates to the next class in the method resolution order.",
-    "practice": "Create a specialized course, then consider how a separate lesson list could be composed into it."
-  },
-  {
-    "module": "04 · Software design",
-    "title": "Dataclasses and type hints",
-    "intro": "Define a typed dataclass for a task with a title, priority, and completion flag.",
-    "explanation": "Type hints document expected types and support static analysis; they do not enforce types automatically at runtime. dataclass generates common methods such as __init__ and repr. Use field(default_factory=list) for independent mutable list defaults.",
-    "code": "from dataclasses import dataclass\n\n@dataclass\nclass Lesson:\n    title: str\n    completed: bool = False\n\nlesson = Lesson(\"Functions\")\nprint(lesson.title)\nprint(lesson.completed)",
-    "output": "Functions\nFalse",
-    "question": "Do type hints automatically reject wrong types at runtime?",
-    "options": [
-      "Yes, always",
-      "No",
-      "Only for strings"
-    ],
-    "answer": 1,
-    "reason": "Runtime validation must be implemented separately or supplied by a library.",
-    "practice": "Define a typed dataclass for a task with a title, priority, and completion flag."
-  },
-  {
-    "module": "04 · Software design",
-    "title": "Iterators and generators",
-    "intro": "Write a generator that yields even numbers below a supplied limit.",
-    "explanation": "An iterator yields values one at a time. A generator function uses yield and resumes its work when requested. Generators can process large streams without constructing a whole list, but a generator is consumed as it is iterated.",
-    "code": "def squares(limit):\n    for n in range(limit):\n        yield n * n\n\nvalues = squares(3)\nprint(next(values))\nprint(list(values))",
-    "output": "0\n[1, 4]",
-    "question": "Which keyword yields a generator value?",
-    "options": [
-      "return",
-      "yield",
-      "emit"
-    ],
-    "answer": 1,
-    "reason": "yield suspends the function, retaining its state for the next request.",
-    "practice": "Write a generator that yields even numbers below a supplied limit."
-  },
-  {
-    "module": "04 · Software design",
-    "title": "Decorators and higher-order functions",
-    "intro": "Write a decorator that prints a message before and after a function call.",
-    "explanation": "Functions are values: they can be passed to other functions and returned. A decorator wraps a function to add behavior. functools.wraps preserves metadata. Wrappers should accept and forward *args and **kwargs when supporting general signatures.",
-    "code": "from functools import wraps\n\ndef announce(function):\n    @wraps(function)\n    def wrapper(*args, **kwargs):\n        print(\"Starting\")\n        return function(*args, **kwargs)\n    return wrapper\n\n@announce\ndef greet():\n    return \"Hello\"\n\nprint(greet())",
-    "output": "Starting\nHello",
-    "question": "What does functools.wraps preserve?",
-    "options": [
-      "Function metadata",
-      "A database connection",
-      "All global state"
-    ],
-    "answer": 0,
-    "reason": "wraps preserves useful metadata such as the wrapped function name and docstring.",
-    "practice": "Write a decorator that prints a message before and after a function call."
-  },
-  {
-    "module": "04 · Software design",
-    "title": "Testing and debugging",
-    "intro": "Write three unittest cases for a price function, including zero and invalid input.",
-    "explanation": "Tests verify behavior and protect against regressions. Check normal cases, boundaries, and invalid input. unittest is built into Python. Read tracebacks from the failure location, then investigate the values that caused the error instead of catching it blindly.",
-    "code": "import unittest\n\ndef double(number):\n    return number * 2\n\nclass DoubleTests(unittest.TestCase):\n    def test_zero(self):\n        self.assertEqual(double(0), 0)\n\nprint(unittest.TestLoader().loadTestsFromTestCase(DoubleTests).countTestCases())",
-    "output": "1",
-    "question": "Which case is useful alongside positive-number tests?",
-    "options": [
-      "Only another positive number",
-      "A boundary case such as zero",
-      "No other cases"
-    ],
-    "answer": 1,
-    "reason": "Boundary cases often expose behavior missed by typical examples.",
-    "practice": "Write three unittest cases for a price function, including zero and invalid input."
-  },
-  {
-    "module": "05 · Applied Python",
-    "title": "Algorithms and complexity",
-    "intro": "Compare a linear lookup with bisect on a sorted list, including a missing value.",
-    "explanation": "Algorithmic complexity describes how work grows with input size. Linear search scans up to n values, O(n). Binary search on sorted data takes O(log n) comparisons, but list insertion can still be O(n). Use standard tools and measure relevant workloads.",
-    "code": "from bisect import bisect_left\n\nvalues = [2, 4, 6, 8, 10]\nindex = bisect_left(values, 6)\nprint(index)\nprint(values[index])",
-    "output": "2\n6",
-    "question": "What prerequisite does binary search need?",
-    "options": [
-      "Sorted data",
-      "Random data",
-      "A set only"
-    ],
-    "answer": 0,
-    "reason": "Binary search uses ordering to discard half of the remaining search range.",
-    "practice": "Compare a linear lookup with bisect on a sorted list, including a missing value."
-  },
-  {
-    "module": "05 · Applied Python",
-    "title": "HTTP and API concepts",
-    "intro": "Plan an API client that has a timeout and reports a 404 clearly; use mock responses in tests.",
-    "explanation": "HTTP requests have methods, headers, status codes, and optional bodies. GET retrieves resources; POST commonly submits data. Handle timeouts, non-success responses, and malformed payloads. This offline example parses a JSON response body without requiring an external service.",
-    "code": "import json\n\nstatus = 200\nresponse_body = '{\"name\": \"Ada\", \"lessons\": 12}'\nif status == 200:\n    learner = json.loads(response_body)\n    print(learner[\"name\"])\n    print(learner[\"lessons\"])",
-    "output": "Ada\n12",
-    "question": "Which response code usually means a resource was not found?",
-    "options": [
-      "200",
-      "404",
-      "201"
-    ],
-    "answer": 1,
-    "reason": "404 indicates a missing resource; 200 indicates success.",
-    "practice": "Plan an API client that has a timeout and reports a 404 clearly; use mock responses in tests."
-  },
-  {
-    "module": "05 · Applied Python",
-    "title": "SQL and SQLite",
-    "intro": "Store task titles in SQLite and retrieve them with a parameterized query.",
-    "explanation": "SQLite stores relational data and is included in Python. Use parameter placeholders instead of building SQL with user text. Commit transactions when changes should persist. This example uses an in-memory database that disappears when closed.",
-    "code": "import sqlite3\n\nconnection = sqlite3.connect(\":memory:\")\ntry:\n    connection.execute(\"CREATE TABLE lessons (title TEXT)\")\n    connection.execute(\"INSERT INTO lessons VALUES (?)\", (\"Python\",))\n    print(connection.execute(\"SELECT title FROM lessons\").fetchone()[0])\nfinally:\n    connection.close()",
-    "output": "Python",
-    "question": "How should user values be supplied in SQL queries?",
-    "options": [
-      "String concatenation",
-      "Parameter placeholders",
-      "Python eval()"
-    ],
-    "answer": 1,
-    "reason": "Bound parameters keep values separate from SQL syntax.",
-    "practice": "Store task titles in SQLite and retrieve them with a parameterized query."
-  },
-  {
-    "module": "05 · Applied Python",
-    "title": "Async programming",
-    "intro": "Schedule three asynchronous tasks with gather and inspect their result order.",
-    "explanation": "async def defines a coroutine function. await suspends a coroutine while an awaitable progresses, letting other work proceed. asyncio.gather schedules awaitables together and returns results in input order. Blocking work still blocks the event loop unless moved to an appropriate executor.",
-    "code": "import asyncio\n\nasync def label(name):\n    await asyncio.sleep(0)\n    return name.upper()\n\nasync def main():\n    print(await asyncio.gather(label(\"ada\"), label(\"grace\")))\n\nasyncio.run(main())",
-    "output": "['ADA', 'GRACE']",
-    "question": "What is await used for?",
-    "options": [
-      "Waiting cooperatively for an awaitable",
-      "Making CPU work automatically parallel",
-      "Importing a package"
-    ],
-    "answer": 0,
-    "reason": "await allows cooperative scheduling while awaiting asynchronous work.",
-    "practice": "Schedule three asynchronous tasks with gather and inspect their result order."
-  },
-  {
-    "module": "05 · Applied Python",
-    "title": "Logging and maintainability",
-    "intro": "Add a named logger to a task module and log state changes without private data.",
-    "explanation": "Use logging for configurable diagnostic messages and named loggers in reusable modules. Avoid recording credentials or private user data. Separate parsing, business logic, and storage so you can test each part. The example uses an in-memory log stream for deterministic output.",
-    "code": "import io\nimport logging\n\nstream = io.StringIO()\nlogger = logging.getLogger(\"course.example\")\nlogger.setLevel(logging.INFO)\nlogger.propagate = False\nhandler = logging.StreamHandler(stream)\nlogger.addHandler(handler)\ntry:\n    logger.info(\"Lesson completed\")\n    print(stream.getvalue().strip())\nfinally:\n    logger.removeHandler(handler)",
-    "output": "Lesson completed",
-    "question": "What should be kept out of logs?",
-    "options": [
-      "Event names",
-      "Secret API keys",
-      "Non-sensitive error categories"
-    ],
-    "answer": 1,
-    "reason": "Credentials in logs can be exposed to anyone with log access.",
-    "practice": "Add a named logger to a task module and log state changes without private data."
-  },
-  {
-    "module": "06 · Final project",
-    "title": "Capstone: build a task tracker",
-    "intro": "Finish the tracker locally: add a command-line menu, JSON storage, validation, and at least five behavior tests. The quiz checks your understanding; it does not grade your project code.",
-    "explanation": "Combine dataclasses, functions, JSON, validation, and tests into a small task tracker. Begin with the working model below. Build add, list, complete, and save/load operations. Keep storage separate from the task model. Test missing tasks, invalid titles, and a save/load round trip.",
-    "code": "from dataclasses import dataclass, asdict\nimport json\n\n@dataclass\nclass Task:\n    title: str\n    done: bool = False\n\ndef add_task(tasks, title):\n    title = title.strip()\n    if not title:\n        raise ValueError(\"Title cannot be empty\")\n    tasks.append(Task(title))\n\ntasks = []\nadd_task(tasks, \"Finish Python course\")\ntasks[0].done = True\nprint(json.dumps([asdict(task) for task in tasks]))",
-    "output": "[{\"title\": \"Finish Python course\", \"done\": true}]",
-    "question": "Which test best verifies persistence?",
-    "options": [
-      "Only check the file exists",
-      "Save, reload, and compare task values",
-      "Print a success message"
-    ],
-    "answer": 1,
-    "reason": "A round-trip test verifies that values survive serialization and loading.",
-    "practice": "Finish the tracker locally: add a command-line menu, JSON storage, validation, and at least five behavior tests. The quiz checks your understanding; it does not grade your project code."
-  }
-];
-const $=id=>document.getElementById(id);let completed=new Set(),current=0,storageAvailable=true;
-try{const saved=JSON.parse(localStorage.getItem('pymaster-progress')||'[]');if(Array.isArray(saved))completed=new Set(saved.filter(n=>Number.isInteger(n)&&n>=0&&n<lessons.length));}catch{storageAvailable=false;}
-function save(){try{localStorage.setItem('pymaster-progress',JSON.stringify([...completed]));}catch{storageAvailable=false;}if(!storageAvailable)$('storage-note').textContent='Progress is kept for this session; browser storage is unavailable.';}
-function navigation(){ $('progress-text').textContent=`${completed.size} of ${lessons.length} lessons completed`;$('progress').max=lessons.length;$('progress').value=completed.size;$('lessons').replaceChildren();lessons.forEach((lesson,i)=>{const button=document.createElement('button');button.className='lesson';button.type='button';const number=document.createElement('span');number.className='number';number.textContent=completed.has(i)?'✓':String(i+1).padStart(2,'0');button.append(number,document.createTextNode(lesson.title));button.setAttribute('aria-current',String(i===current));button.onclick=()=>{current=i;showLesson();};$('lessons').append(button);});updateDashboard();}
-function render(){ $('hint-content').replaceChildren();$('hint-status').textContent='';$('show-hints').textContent='Get a progressive hint';if(window.learningUI)window.learningUI.resetHints();$('copy').textContent='Copy code';const lesson=lessons[current];navigation();$('module-label').textContent=lesson.module;$('practice').textContent=lesson.practice;$('step').textContent=`LESSON ${current+1} OF ${lessons.length}`;for(const key of ['title','intro','explanation','code','output','question'])$(key).textContent=lesson[key];$('feedback').textContent='';$('options').replaceChildren();lesson.options.forEach((text,i)=>{const label=document.createElement('label');label.className='option';const input=document.createElement('input');input.type='radio';input.name='answer';input.value=i;input.required=true;label.append(input,document.createTextNode(text));$('options').append(label);});$('previous').disabled=current===0;$('next').disabled=false;$('next').textContent=current===lessons.length-1?'View course results →':'Next lesson →';}
-$('quiz').onsubmit=event=>{event.preventDefault();const selected=new FormData(event.target).get('answer');if(selected===null)return;const lesson=lessons[current];if(Number(selected)===lesson.answer){completed.add(current);save();navigation();$('feedback').textContent='Correct! '+lesson.reason+(completed.size===lessons.length?' You completed the Python mastery path!':'');$('feedback').style.color='#9cddbc';}else{$('feedback').textContent='Try again. '+lesson.reason;$('feedback').style.color='#ffd39c';}};
-
-function showLesson(){ $('learning-panel').hidden=true;$('hint-content').replaceChildren();$('hint-status').textContent='';$('show-hints').textContent='Get a progressive hint'; $('dashboard').hidden=true;$('lesson-view').hidden=false;render();$('title').setAttribute('tabindex','-1');$('title').focus({preventScroll:true});window.scrollTo({top:0,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}
-function showDashboard(){ $('learning-panel').hidden=true; $('dashboard').hidden=false;$('lesson-view').hidden=true;updateDashboard();}
-function updateDashboard(){ $('stat-complete').textContent=completed.size+' / '+lessons.length;$('stat-percent').textContent=Math.round(completed.size/lessons.length*100)+'%';$('course-progress-ring').style.setProperty('--progress-angle',completed.size/lessons.length*360+'deg');$('course-progress-ring').setAttribute('aria-label','Course progress '+Math.round(completed.size/lessons.length*100)+' percent');$('continue').textContent=completed.size===lessons.length?'Review your lessons →':completed.size?'Continue learning →':'Start learning →';$('course-grid').replaceChildren();$('completion').hidden=completed.size!==lessons.length;const icons=['>_','x =','if','↻','[ ]','ƒ'];const query=$('search').value.toLowerCase();lessons.forEach((lesson,i)=>{if(($('module-filter').value&&lesson.module!==$('module-filter').value)||!(lesson.title+' '+lesson.explanation).toLowerCase().includes(query))return;const button=document.createElement('button');button.className='course';button.type='button';const icon=document.createElement('span');icon.className='course-icon';icon.textContent=icons[i%icons.length];const meta=document.createElement('small');meta.textContent=lesson.module+' · '+String(i+1).padStart(2,'0');const title=document.createElement('strong');title.textContent=lesson.title;const status=document.createElement('span');status.className='status';status.textContent=completed.has(i)?'✓ Completed · Review lesson':'Explore lesson →';button.append(icon,meta,title,status);button.onclick=()=>{current=i;showLesson();};$('course-grid').append(button);});if(!$('course-grid').children.length){const empty=document.createElement('p');empty.textContent='No lessons match. Try a different topic or module.';$('course-grid').append(empty);}}
-$('dashboard-link').onclick=showDashboard;$('back-dashboard').onclick=showDashboard;$('continue').onclick=()=>{const next=lessons.findIndex((_,i)=>!completed.has(i));current=next===-1?0:next;showLesson();};
-$('copy').onclick=async()=>{try{await navigator.clipboard.writeText(lessons[current].code);$('copy').textContent='Copied!';}catch{$('copy').textContent='Select code to copy';}};
-
-
-function download(name,text,type='text/plain'){const url=URL.createObjectURL(new Blob([text],{type}));const link=document.createElement('a');link.href=url;link.download=name;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-for(const module of [...new Set(lessons.map(l=>l.module))]){const option=document.createElement('option');option.value=module;option.textContent=module;$('module-filter').append(option);}
-$('search').oninput=updateDashboard;$('module-filter').onchange=updateDashboard;
-$('download-code').onclick=()=>download('lesson-'+(current+1)+'.py',lessons[current].code+'\n');
-$('import-button').onclick=()=>$('import-progress').click();
-$('export-progress').onclick=()=>download('pymaster-progress.json',JSON.stringify({version:1,completed:[...completed]},null,2),'application/json');
-$('import-progress').onchange=async event=>{const file=event.target.files[0];if(!file)return;try{if(file.size>100000)throw Error('File too large');const data=JSON.parse(await file.text());if(data.version!==1||!Array.isArray(data.completed)||!data.completed.every(n=>Number.isInteger(n)&&n>=0&&n<lessons.length))throw Error('Invalid progress file');data.completed.forEach(n=>completed.add(n));save();navigation();$('import-status').textContent='Progress imported successfully.';}catch{$('import-status').textContent='Could not import. Choose a valid PYMASTER progress export.';}event.target.value='';};
-$('download-summary').onclick=()=>{if(completed.size!==lessons.length)return;download('pymaster-completion.txt','PYMASTER-AI — Personal learning record\n\nCompleted all '+lessons.length+' lesson quizzes in the Python mastery path.\n\n'+lessons.map((l,i)=>(i+1)+'. '+l.title).join('\n')+'\n\nThis is a self-paced learning record, not an accredited certificate. Project code has not been graded.\n');};
-
-$('previous').onclick=()=>{if(current>0){current--;render();}};$('next').onclick=()=>{if(current<lessons.length-1){current++;render();}else{showDashboard();if(completed.size===lessons.length){$('completion').scrollIntoView({behavior:'smooth',block:'center'});}else{$('import-status').textContent='You have '+(lessons.length-completed.size)+' lesson quizzes left. Use Continue learning to finish your path.';}}};$('reset').onclick=()=>{if(confirm('Reset all lesson progress?')){completed.clear();save();current=0;render();}};render();showDashboard();if(!storageAvailable)$('storage-note').textContent='Progress is kept for this session; browser storage is unavailable.';
-</script><script src="/workspace.js"></script></body></html>
+<script src="/app.js"></script><script src="/workspace.js"></script></body></html>
