@@ -5,9 +5,28 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pymaster-ai"
 version = "0.1.0"
-description = "A starting point for PYMASTER-AI"
+description = "A hands-on multi-language programming learning platform with an isolated browser Python playground"
+readme = "README.md"
 requires-python = ">=3.12"
+license = { text = "Proprietary" }
+keywords = ["programming-education", "python", "html", "css", "typescript", "java", "learning-platform"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Web Environment",
+  "Intended Audience :: Education",
+  "License :: Other/Proprietary License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Education",
+  "Topic :: Education :: Computer Aided Instruction (CAI)",
+]
+
 dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/dionstacey03-dev/PYMASTER-AI"
+Repository = "https://github.com/dionstacey03-dev/PYMASTER-AI"
+Issues = "https://github.com/dionstacey03-dev/PYMASTER-AI/issues"
 
 [project.scripts]
 pymaster-ai = "pymaster_ai.__main__:main"
